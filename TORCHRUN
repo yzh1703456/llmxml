@@ -81,9 +81,9 @@ export NCCL_SOCKET_FAMILY=AF_INET6
 export NCCL_IB_TIMEOUT=23
 export NCCL_IB_DISABLE=0
 export NCCL_IB_RETRY_CNT=7
-export NCCL_TOPO_FILE=/var/run/nvidia-topologyd/virtualTopology_l20.xml
+# export NCCL_TOPO_FILE=/var/run/nvidia-topologyd/virtualTopology_l20.xml
 # export MSCCL_ALGO_DIR=/opt/tiger/xmls
-export LD_LIBRARY_PATH=/opt/tiger/msccl/build/lib:$LD_LIBRARY_PATH
+# export LD_LIBRARY_PATH=/opt/tiger/msccl/build/lib:$LD_LIBRARY_PATH
 
 torchrun \
   --node_rank=$node_rank \
