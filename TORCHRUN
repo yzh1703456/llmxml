@@ -90,6 +90,10 @@ nnodes="4"
 #   nohup tensorboard --logdir=${TENSORBOARD_LOGDIR} --port=$tensorboard_port --bind_all > tensorboard.log 2>&1 &
 # fi
 
+
+export CUDA_DEVICE_MAX_CONNECTIONS=1
+export CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7
+
 # export CUDA_VISIBLE_DEVICES=0,1,4,5,8,9,12,13,2,3,6,7,10,11,14,15
 # export NCCL_MIN_NCHANNELS=4
 # export NCCL_NET_PLUGIN=none
