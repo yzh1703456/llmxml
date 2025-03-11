@@ -62,7 +62,7 @@ case $IP_ADDR in
         ;;
 esac
 master_addr="10.232.194.226"
-master_port="1089"
+master_port="10086"
 additional_args="--rdzv_endpoint=${master_addr}:${master_port}"
 nproc_per_node="8"
 nnodes="4"
